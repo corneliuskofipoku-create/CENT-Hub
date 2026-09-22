@@ -14,10 +14,11 @@ const products = [
   { name: "Cross Graphic Tee", category: "T-Shirts", color: "White", image: "images/t-shirts/cross-graphic-tee.jpg" },
   { name: "Classic Black Belt", category: "Accessories", color: "Black", image: "images/accessories/classic-black-belt.jpg" },
   { name: "Flower Link Bracelet", category: "Accessories", color: "Gold / White", image: "images/accessories/flower-link-bracelet.jpg" },
-  { name: "Gold Chronograph Watch", category: "Accessories", color: "Gold / Black", image: "images/accessories/gold-chronograph-watch.jpg" }
+  { name: "Gold Chronograph Watch", category: "Accessories", color: "Gold / Black", image: "images/accessories/gold-chronograph-watch.jpg" },
+  { name: "Comic Boom Hoodie", category: "Hoodies", color: "White / Black / Orange", image: "images/hoodies/comic-boom-hoodie.jpg" }
 ];
 
-const categories = ["Caps & Hats", "Shoes", "T-Shirts", "Accessories"];
+const categories = ["Caps & Hats", "Shoes", "T-Shirts", "Hoodies", "Accessories"];
 let activeCategory = "All";
 
 function chatOnWhatsApp(productName) {
@@ -52,7 +53,7 @@ function buildSections() {
   allSection.id = "all-products";
   allSection.className = "category-section";
   allSection.dataset.category = "All";
-  allSection.innerHTML = `<div class="section-title"><div><p class="eyebrow">CENT COLLECTION</p><h2>All Products</h2></div><span>14 products</span></div>`;
+  allSection.innerHTML = `<div class="section-title"><div><p class="eyebrow">CENT COLLECTION</p><h2>All Products</h2></div><span>15 products</span></div>`;
   const allGrid = document.createElement("div");
   allGrid.className = "grid";
   products.forEach(p => allGrid.appendChild(makeCard(p)));
@@ -112,7 +113,7 @@ function updateStore() {
   resultCount.textContent = query
     ? `${totalVisible} matching product${totalVisible === 1 ? "" : "s"}`
     : activeCategory === "All"
-      ? "14 products"
+      ? "15 products"
       : `${products.filter(p => p.category === activeCategory).length} products`;
 
   document.getElementById("noResults").hidden = totalVisible !== 0;

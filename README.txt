@@ -6,7 +6,7 @@ Features:
 - Shoes shows all 3 Shoes.
 - Caps & Hats shows all 5.
 - Accessories shows all 3.
-- All shows all 14 products.
+- All shows all 15 products.
 - Each product has a WhatsApp chat button connected to +233 240 440 655.
 
 GitHub Pages:
