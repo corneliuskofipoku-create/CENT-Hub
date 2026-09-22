@@ -1,11 +1,13 @@
-CENT STORE
+CENT STORE - SEARCH + CATEGORIES
 
-The category buttons now jump to complete category sections:
-- Caps & Hats: all 5 products
-- Shoes: all 3 products
-- T-Shirts: all 3 products
-- Accessories: all 3 products
+Features:
+- Search all 14 CENT products by name, category, or color.
+- T-Shirts shows all 3 T-Shirts.
+- Shoes shows all 3 Shoes.
+- Caps & Hats shows all 5.
+- Accessories shows all 3.
+- All shows all 14 products.
+- Each product has a WhatsApp chat button connected to +233 240 440 655.
 
-All Products remains available at the top. Each product keeps its WhatsApp chat button for +233 240 440 655.
-
-Upload the contents of this folder to your CENT-Hub GitHub repository and replace the old website files.
+GitHub Pages:
+Upload all files and folders in this directory to your GitHub repository. Keep the images folder and its category folders together with index.html, style.css, and script.js.
