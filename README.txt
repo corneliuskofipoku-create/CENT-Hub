@@ -1,13 +1,18 @@
-CENT STORE - SEARCH + CATEGORIES
+CENT STORE - HOODIE FIXED
 
-Features:
-- Search all 14 CENT products by name, category, or color.
-- T-Shirts shows all 3 T-Shirts.
-- Shoes shows all 3 Shoes.
-- Caps & Hats shows all 5.
-- Accessories shows all 3.
-- All shows all 15 products.
-- Each product has a WhatsApp chat button connected to +233 240 440 655.
+This version includes all 15 products, including the new Comic Boom Hoodie.
 
-GitHub Pages:
-Upload all files and folders in this directory to your GitHub repository. Keep the images folder and its category folders together with index.html, style.css, and script.js.
+Hoodie image:
+images/hoodies/comic-boom-hoodie.jpg
+
+IMPORTANT FOR GITHUB:
+Upload/replace the ENTIRE contents of this folder in your GitHub repository:
+- index.html
+- style.css
+- script.js
+- images folder
+
+Do not upload only index.html. The hoodie image must be uploaded inside:
+images/hoodies/comic-boom-hoodie.jpg
+
+WhatsApp number: +233 240 440 655
