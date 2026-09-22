@@ -1,83 +1,211 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CENT Hub</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CENT Store</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-<nav class="navbar">
-<div class="logo">CENT<span>HUB</span></div>
-<ul class="nav-links">
-<li><a href="index.html#home">Home</a></li><li><a href="index.html#shop">Shop</a></li>
-<li><a href="about.html">About</a></li><li><a href="explore.html">Explore Store</a></li><li><a href="contact.html">Contact</a></li>
-</ul>
-<button class="cart-button" onclick="showCart()">🛒 Cart <span id="cart-count">0</span></button>
-</nav>
+<header class="header">
+  <a class="logo" href="#">CENT<span>®</span></a>
+  <nav>
+    <a href="#shop">Shop</a>
+    <a href="#categories">Categories</a>
+    <a href="#about">About</a>
+  </nav>
+  <button class="header-whatsapp" onclick="chatOnWhatsApp('CENT Store')">Chat on WhatsApp</button>
 </header>
-<main>
-<section id="home" class="hero hero-image">
-<div class="hero-photo"><img src="images/cent-new-york-hoodie.jpeg" alt="CENT New York Collection"></div>
-<div class="hero-content"><p class="small-title">CENT NEW YORK COLLECTION</p><h1>CENT <span>STORE</span></h1><p>Dream • Explore • Achieve. Discover the latest CENT style and watches.</p><a href="#shop" class="hero-button">Shop Now</a></div>
+
+<section class="hero">
+  <div>
+    <p class="eyebrow">WELCOME TO CENT</p>
+    <h1>EVERYDAY STYLE.<br><span>YOUR WAY.</span></h1>
+    <p class="hero-text">Explore the latest CENT collection — caps, sneakers, tees and accessories.</p>
+    <a class="hero-btn" href="#shop">Shop collection</a>
+  </div>
 </section>
-<section class="categories"><h2>Explore CENT</h2>
-<div class="category-container">
-<button onclick="filterProducts('all')">All</button>
-<button onclick="filterProducts('clothing')">Clothing</button>
-<button onclick="filterProducts('shoes')">Shoes</button>
-<button onclick="filterProducts('accessories')">Accessories</button>
-</div></section>
+
+<section id="categories" class="categories">
+  <h2>Shop by category</h2>
+  <div class="category-buttons">
+    <button class="filter active" data-filter="All">All</button>
+    <button class="filter" data-filter="Caps & Hats">Caps & Hats</button>
+    <button class="filter" data-filter="Shoes">Shoes</button>
+    <button class="filter" data-filter="T-Shirts">T-Shirts</button>
+    <button class="filter" data-filter="Accessories">Accessories</button>
+  </div>
+</section>
+
 <section id="shop" class="shop">
-<div class="shop-header"><div><p class="small-title">CENT STORE</p><h2>Featured Products</h2></div>
-<input type="text" id="search" placeholder="Search products..." onkeyup="searchProducts()"></div>
-<div class="product-grid" id="product-grid">
-<div class="product-card" data-category="accessories"><img class="product-image photo" src="images/cent-black-watch.png" alt="CENT Classic Black Watch"><h3>CENT Classic Black Watch</h3><p class="product-category">Watches</p><p class="price">GH₵ 450</p><button onclick="addToCart('CENT Classic Black Watch',450)">Add to Cart</button></div>
-<div class="product-card" data-category="accessories"><img class="product-image photo" src="images/cent-rose-gold-watch.png" alt="CENT Rose Gold Watch"><h3>CENT Rose Gold Watch</h3><p class="product-category">Watches</p><p class="price">GH₵ 520</p><button onclick="addToCart('CENT Rose Gold Watch',520)">Add to Cart</button></div>
-<div class="product-card" data-category="accessories"><img class="product-image photo" src="images/cent-gold-edition.png" alt="CENT Gold Edition"><h3>CENT Gold Edition</h3><p class="product-category">Watches</p><p class="price">GH₵ 650</p><button onclick="addToCart('CENT Gold Edition',650)">Add to Cart</button></div>
-<div class="product-card" data-category="accessories"><img class="product-image photo" src="images/cent-square-watch.png" alt="CENT Square Watch"><h3>CENT Square</h3><p class="product-category">Watches</p><p class="price">GH₵ 500</p><button onclick="addToCart('CENT Square',500)">Add to Cart</button></div>
-<div class="product-card" data-category="accessories"><img class="product-image photo" src="images/cent-smartwatch.png" alt="CENT Smartwatch"><h3>CENT Smartwatch</h3><p class="product-category">Smartwatch</p><p class="price">GH₵ 600</p><button onclick="addToCart('CENT Smartwatch',600)">Add to Cart</button></div>
-<div class="product-card" data-category="accessories"><img class="product-image photo" src="images/cent-unicorn-kids.png" alt="CENT Unicorn Kids Watch"><h3>CENT Unicorn Kid</h3><p class="product-category">Kids Watches</p><p class="price">GH₵ 250</p><button onclick="addToCart('CENT Unicorn Kid',250)">Add to Cart</button></div>
-<div class="product-card" data-category="accessories"><img class="product-image photo" src="images/cent-kids-sport.png" alt="CENT Kid Sport Watch"><h3>CENT Kid Sport</h3><p class="product-category">Kids Watches</p><p class="price">GH₵ 280</p><button onclick="addToCart('CENT Kid Sport',280)">Add to Cart</button></div>
-<div class="product-card" data-category="clothing"><img class="product-image photo" src="images/cent-new-york-hoodie.jpeg" alt="CENT New York Hoodie"><h3>CENT New York Hoodie</h3><p class="product-category">Hoodies</p><p class="price">GH₵ 350</p><button onclick="addToCart('CENT New York Hoodie',350)">Add to Cart</button></div>
-</div></section>
-<section id="contact" class="contact">
-
-    <h2>Contact CENT</h2>
-
-    <p>Have a question? Send us a message.</p>
-
-    <form class="contact-form">
-
-        <input
-            type="text"
-            placeholder="Your Name"
-            required
-        >
-
-        <input
-            type="email"
-            placeholder="Your Email"
-            required
-        >
-
-        <textarea
-            placeholder="Your Message"
-            rows="6"
-            required
-        ></textarea>
-
-        <button type="submit">
-            Send Message
-        </button>
-
-    </form>
-
+  <div class="section-title">
+    <div><p class="eyebrow">CENT COLLECTION</p><h2>Featured pieces</h2></div>
+    <span id="resultCount">14 products</span>
+  </div>
+  <div class="grid">
+    
+      <article class="product" data-category="Caps &amp; Hats">
+        <div class="product-image"><img src="images/caps-hats/cross-detail-cap.jpg" alt="Cross Detail Cap" loading="lazy"></div>
+        <div class="product-info">
+          <span class="tag">Caps &amp; Hats</span>
+          <h3>Cross Detail Cap</h3>
+          <p>Black</p>
+          <button class="chat-btn" onclick="chatOnWhatsApp('Cross Detail Cap')">Chat on WhatsApp</button>
+        </div>
+      </article>
+    
+      <article class="product" data-category="Caps &amp; Hats">
+        <div class="product-image"><img src="images/caps-hats/classic-bulls-cap.jpg" alt="Classic Bulls Cap" loading="lazy"></div>
+        <div class="product-info">
+          <span class="tag">Caps &amp; Hats</span>
+          <h3>Classic Bulls Cap</h3>
+          <p>Black / Red</p>
+          <button class="chat-btn" onclick="chatOnWhatsApp('Classic Bulls Cap')">Chat on WhatsApp</button>
+        </div>
+      </article>
+    
+      <article class="product" data-category="Caps &amp; Hats">
+        <div class="product-image"><img src="images/caps-hats/color-stack-cap.jpg" alt="Color Stack Cap" loading="lazy"></div>
+        <div class="product-info">
+          <span class="tag">Caps &amp; Hats</span>
+          <h3>Color Stack Cap</h3>
+          <p>Blue / Red / Green</p>
+          <button class="chat-btn" onclick="chatOnWhatsApp('Color Stack Cap')">Chat on WhatsApp</button>
+        </div>
+      </article>
+    
+      <article class="product" data-category="Caps &amp; Hats">
+        <div class="product-image"><img src="images/caps-hats/essential-trucker-cap.jpg" alt="Essential Trucker Cap" loading="lazy"></div>
+        <div class="product-info">
+          <span class="tag">Caps &amp; Hats</span>
+          <h3>Essential Trucker Cap</h3>
+          <p>Black</p>
+          <button class="chat-btn" onclick="chatOnWhatsApp('Essential Trucker Cap')">Chat on WhatsApp</button>
+        </div>
+      </article>
+    
+      <article class="product" data-category="Caps &amp; Hats">
+        <div class="product-image"><img src="images/caps-hats/king-beanie.jpg" alt="KING Beanie" loading="lazy"></div>
+        <div class="product-info">
+          <span class="tag">Caps &amp; Hats</span>
+          <h3>KING Beanie</h3>
+          <p>Black / White / Grey</p>
+          <button class="chat-btn" onclick="chatOnWhatsApp('KING Beanie')">Chat on WhatsApp</button>
+        </div>
+      </article>
+    
+      <article class="product" data-category="Shoes">
+        <div class="product-image"><img src="images/shoes/retro-runner-sneakers.jpg" alt="Retro Runner Sneakers" loading="lazy"></div>
+        <div class="product-info">
+          <span class="tag">Shoes</span>
+          <h3>Retro Runner Sneakers</h3>
+          <p>White / Black</p>
+          <button class="chat-btn" onclick="chatOnWhatsApp('Retro Runner Sneakers')">Chat on WhatsApp</button>
+        </div>
+      </article>
+    
+      <article class="product" data-category="Shoes">
+        <div class="product-image"><img src="images/shoes/red-edge-sneakers.jpg" alt="Red Edge Sneakers" loading="lazy"></div>
+        <div class="product-info">
+          <span class="tag">Shoes</span>
+          <h3>Red Edge Sneakers</h3>
+          <p>White / Red</p>
+          <button class="chat-btn" onclick="chatOnWhatsApp('Red Edge Sneakers')">Chat on WhatsApp</button>
+        </div>
+      </article>
+    
+      <article class="product" data-category="Shoes">
+        <div class="product-image"><img src="images/shoes/urban-motion-sneakers.jpg" alt="Urban Motion Sneakers" loading="lazy"></div>
+        <div class="product-info">
+          <span class="tag">Shoes</span>
+          <h3>Urban Motion Sneakers</h3>
+          <p>Black / White / Green</p>
+          <button class="chat-btn" onclick="chatOnWhatsApp('Urban Motion Sneakers')">Chat on WhatsApp</button>
+        </div>
+      </article>
+    
+      <article class="product" data-category="T-Shirts">
+        <div class="product-image"><img src="images/t-shirts/minimal-smile-tee.jpg" alt="Minimal Smile Tee" loading="lazy"></div>
+        <div class="product-info">
+          <span class="tag">T-Shirts</span>
+          <h3>Minimal Smile Tee</h3>
+          <p>White</p>
+          <button class="chat-btn" onclick="chatOnWhatsApp('Minimal Smile Tee')">Chat on WhatsApp</button>
+        </div>
+      </article>
+    
+      <article class="product" data-category="T-Shirts">
+        <div class="product-image"><img src="images/t-shirts/graphic-street-tee.jpg" alt="Graphic Street Tee" loading="lazy"></div>
+        <div class="product-info">
+          <span class="tag">T-Shirts</span>
+          <h3>Graphic Street Tee</h3>
+          <p>Black</p>
+          <button class="chat-btn" onclick="chatOnWhatsApp('Graphic Street Tee')">Chat on WhatsApp</button>
+        </div>
+      </article>
+    
+      <article class="product" data-category="T-Shirts">
+        <div class="product-image"><img src="images/t-shirts/cross-graphic-tee.jpg" alt="Cross Graphic Tee" loading="lazy"></div>
+        <div class="product-info">
+          <span class="tag">T-Shirts</span>
+          <h3>Cross Graphic Tee</h3>
+          <p>White</p>
+          <button class="chat-btn" onclick="chatOnWhatsApp('Cross Graphic Tee')">Chat on WhatsApp</button>
+        </div>
+      </article>
+    
+      <article class="product" data-category="Accessories">
+        <div class="product-image"><img src="images/accessories/classic-black-belt.jpg" alt="Classic Black Belt" loading="lazy"></div>
+        <div class="product-info">
+          <span class="tag">Accessories</span>
+          <h3>Classic Black Belt</h3>
+          <p>Black</p>
+          <button class="chat-btn" onclick="chatOnWhatsApp('Classic Black Belt')">Chat on WhatsApp</button>
+        </div>
+      </article>
+    
+      <article class="product" data-category="Accessories">
+        <div class="product-image"><img src="images/accessories/flower-link-bracelet.jpg" alt="Flower Link Bracelet" loading="lazy"></div>
+        <div class="product-info">
+          <span class="tag">Accessories</span>
+          <h3>Flower Link Bracelet</h3>
+          <p>Gold / White</p>
+          <button class="chat-btn" onclick="chatOnWhatsApp('Flower Link Bracelet')">Chat on WhatsApp</button>
+        </div>
+      </article>
+    
+      <article class="product" data-category="Accessories">
+        <div class="product-image"><img src="images/accessories/gold-chronograph-watch.jpg" alt="Gold Chronograph Watch" loading="lazy"></div>
+        <div class="product-info">
+          <span class="tag">Accessories</span>
+          <h3>Gold Chronograph Watch</h3>
+          <p>Gold / Black</p>
+          <button class="chat-btn" onclick="chatOnWhatsApp('Gold Chronograph Watch')">Chat on WhatsApp</button>
+        </div>
+      </article>
+    
+  </div>
 </section>
-<section class="contact"><h2>Contact CENT</h2><p>Have a question? Get in touch with us.</p><a href="contact.html" class="contact-link">Contact Us</a></section>
-</main>
-<footer><div class="footer-logo">CENT<span>STORE</span></div><p>© 2026 CENT Hub. All rights reserved.</p></footer>
+
+<section id="about" class="about">
+  <p class="eyebrow">THE CENT IDEA</p>
+  <h2>Simple pieces. Strong style.</h2>
+  <p>CENT is your space for modern everyday fashion and accessories.</p>
+</section>
+
+<footer>
+  <strong>CENT®</strong>
+  <span>© 2026 CENT Store</span>
+</footer>
+
+<div id="toast" class="toast"></div>
 <script src="script.js"></script>
+
+<!--
+  WHATSAPP CONTACTS
+  Replace the placeholder numbers in script.js with the WhatsApp number
+  for each product owner. Use country code only, with no +, spaces, or dashes.
+  Example Ghana number: 233241234567
+-->
 </body>
 </html>

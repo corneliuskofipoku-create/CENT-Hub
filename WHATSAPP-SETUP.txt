@@ -1,0 +1,16 @@
+CENT STORE WHATSAPP
+
+WhatsApp is now connected to: +233 240 440 655
+
+Every product's "Chat on WhatsApp" button opens WhatsApp directly with
+a message containing that product's name.
+
+The WhatsApp link uses:
+https://wa.me/233240440655
+
+To update GitHub:
+1. Extract this ZIP.
+2. Upload the files and images into your CENT-Hub repository.
+3. Replace the old files when GitHub asks.
+4. Commit the changes.
+5. Open your GitHub Pages site and click any product's Chat on WhatsApp button.
