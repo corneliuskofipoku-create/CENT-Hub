@@ -1,16 +1,18 @@
-CENT STORE WHATSAPP
+CENT STORE WHATSAPP + CATEGORIES
 
-WhatsApp is now connected to: +233 240 440 655
+WhatsApp number: +233 240 440 655
 
-Every product's "Chat on WhatsApp" button opens WhatsApp directly with
-a message containing that product's name.
+Each product has a Chat on WhatsApp button. The category buttons now also
+filter the products AND automatically scroll down to the product images.
 
-The WhatsApp link uses:
-https://wa.me/233240440655
+Categories:
+- Caps & Hats
+- Shoes
+- T-Shirts
+- Accessories
 
-To update GitHub:
+To publish:
 1. Extract this ZIP.
-2. Upload the files and images into your CENT-Hub repository.
-3. Replace the old files when GitHub asks.
-4. Commit the changes.
-5. Open your GitHub Pages site and click any product's Chat on WhatsApp button.
+2. Upload all files and the images folder to your CENT-Hub repository.
+3. Commit the changes.
+4. Open your GitHub Pages CENT Store.

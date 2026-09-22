@@ -2,3 +2,11 @@
 
 .header-whatsapp{border:1px solid #18c964;background:#18c964;color:#fff;border-radius:22px;padding:10px 17px;cursor:pointer;font-weight:700}
 .header-whatsapp:hover{opacity:.9}
+
+/* Keep the product images visible below the sticky header after a category is selected. */
+#shop{scroll-margin-top:95px}
+
+.filter{display:inline-block;text-decoration:none;color:inherit}
+.product{scroll-margin-top:95px}
+
+.category-section{scroll-margin-top:95px;padding:20px 0 70px}.category-section + .category-section{padding-top:30px}.category-section .grid{margin-top:10px}

@@ -1,18 +1,11 @@
-CENT STORE WEBSITE
+CENT STORE
 
-Files:
-- index.html
-- style.css
-- script.js
-- images/
+The category buttons now jump to complete category sections:
+- Caps & Hats: all 5 products
+- Shoes: all 3 products
+- T-Shirts: all 3 products
+- Accessories: all 3 products
 
-To publish with GitHub Pages:
-1. Upload everything inside this folder to your CENT-Hub repository.
-2. Make sure index.html is in the repository's main/root folder.
-3. Go to Settings -> Pages.
-4. Under Build and deployment, choose Deploy from a branch.
-5. Select your main branch and /(root), then Save.
-6. GitHub will give you your public website link.
+All Products remains available at the top. Each product keeps its WhatsApp chat button for +233 240 440 655.
 
-The category buttons are already connected:
-Caps & Hats, Shoes, T-Shirts, Accessories.
+Upload the contents of this folder to your CENT-Hub GitHub repository and replace the old website files.
