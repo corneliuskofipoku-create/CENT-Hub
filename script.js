@@ -19,6 +19,27 @@ const products = [
 ];
 
 const categories = ["Caps & Hats", "Shoes", "T-Shirts", "Hoodies", "Accessories"];
+
+const searchAliases = {
+  shoe: "shoes",
+  shoes: "shoes",
+  sneaker: "shoes",
+  sneakers: "shoes",
+  shirt: "t-shirts",
+  tshirt: "t-shirts",
+  "t shirt": "t-shirts",
+  tee: "t-shirts",
+  cap: "caps hats",
+  caps: "caps hats",
+  hat: "caps hats",
+  hats: "caps hats",
+  hoodie: "hoodies",
+  hoodies: "hoodies",
+  watch: "accessories",
+  watches: "accessories",
+  bracelet: "accessories",
+  belt: "accessories"
+};
 let activeCategory = "All";
 
 function chatOnWhatsApp(productName) {
