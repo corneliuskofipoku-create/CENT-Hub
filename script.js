@@ -79,6 +79,17 @@ function makeCard(product) {
 }
 
 function renderStore() {
+    const featuredContainer = document.getElementById("featuredProducts");
+
+  if (featuredContainer) {
+    featuredContainer.innerHTML = "";
+
+    products
+      .filter(product => featuredNames.includes(product.name))
+      .forEach(product => {
+        featuredContainer.appendChild(makeCard(product));
+      });
+  }
   const container = document.getElementById("productSections");
   let query = document.getElementById("searchInput").value.trim().toLowerCase();
 
