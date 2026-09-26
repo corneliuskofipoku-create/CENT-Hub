@@ -371,3 +371,17 @@
 .back-to-top:hover {
   transform: translateY(-2px);
 }
+.product-price {
+  display: block;
+  font-size: 18px;
+  font-weight: 800;
+  margin: 8px 0 12px;
+  color: #111;
+}
+
+@media (max-width: 600px) {
+  .product-price {
+    font-size: 17px;
+    margin: 7px 0 10px;
+  }
+}
