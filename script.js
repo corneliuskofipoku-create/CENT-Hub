@@ -36,9 +36,11 @@ const searchAliases = {
   hoodie: "hoodies",
   hoodies: "hoodies",
   watch: "accessories",
-  watches: "accessories",
-  bracelet: "accessories",
-  belt: "accessories"
+watches: "accessories",
+accessory: "accessories",
+accessories: "accessories",
+bracelet: "accessories",
+belt: "accessories",
 };
 let activeCategory = "All";
 
