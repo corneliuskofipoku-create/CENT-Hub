@@ -352,3 +352,22 @@
     color: #777;
   }
 }
+.back-to-top {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  width: 46px;
+  height: 46px;
+  border: none;
+  border-radius: 50%;
+  background: #111;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 999;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-top:hover {
+  transform: translateY(-2px);
+}
