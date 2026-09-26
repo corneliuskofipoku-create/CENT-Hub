@@ -123,3 +123,17 @@ document.addEventListener("DOMContentLoaded", () => {
   input.addEventListener("input", () => { activeCategory = "All"; document.querySelectorAll(".filter").forEach(b => b.classList.toggle("active", b.dataset.category === "All")); renderStore(); });
   document.getElementById("clearSearch").addEventListener("click", () => { input.value = ""; renderStore(); input.focus(); });
 });
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+  backToTop.style.display = window.scrollY > 400 ? "block" : "none";
+});
+
+backToTop.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+
+backToTop.style.display = "none";
