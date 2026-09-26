@@ -69,7 +69,13 @@ function makeCard(product) {
 
 function renderStore() {
   const container = document.getElementById("productSections");
-  const query = document.getElementById("searchInput").value.trim().toLowerCase();
+  let query = document.getElementById("searchInput").value.trim().toLowerCase();
+
+Object.keys(searchAliases).forEach(word => {
+  if (query === word) {
+    query = searchAliases[word];
+  }
+});
   container.innerHTML = "";
   let visibleTotal = 0;
 
