@@ -62,8 +62,11 @@ function makeCard(product) {
     <div class="product-info">
       <span class="tag">${product.category}</span>
       <h3>${product.name}</h3>
-      <p>${product.color}</p>
-      <button class="chat-btn" type="button">Chat on WhatsApp</button>
+<p>${product.color}</p>
+<strong class="product-price">GH₵${product.price}</strong>
+<button class="chat-btn" type="button">Chat on WhatsApp</button>
+      
+  
     </div>`;
   card.querySelector(".chat-btn").addEventListener("click", () => chatOnWhatsApp(product.name));
   return card;
