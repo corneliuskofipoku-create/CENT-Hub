@@ -8,7 +8,7 @@ const products = [
   { name: "KING Beanie", category: "Caps & Hats", color: "Black / White / Grey", price: 140, image: "images/caps-hats/king-beanie.jpg" },
   { name: "Retro Runner Sneakers", category: "Shoes", color: "White / Black", price: 450, image: "images/shoes/retro-runner-sneakers.jpg" },
   { name: "Red Edge Sneakers", category: "Shoes", color: "White / Red", price: 480, image: "images/shoes/red-edge-sneakers.jpg" },
-  { name: "Urban Motion Sneakers", category: "Shoes", color: "Black / White / Green", image: "images/shoes/urban-motion-sneakers.jpg" },
+  { name: "Urban Motion Sneakers", category: "Shoes", color: "Black / White / Green", price: 500, image: "images/shoes/urban-motion-sneakers.jpg" },
   { name: "Minimal Smile Tee", category: "T-Shirts", color: "White", image: "images/t-shirts/minimal-smile-tee.jpg" },
   { name: "Graphic Street Tee", category: "T-Shirts", color: "Black", image: "images/t-shirts/graphic-street-tee.jpg" },
   { name: "Cross Graphic Tee", category: "T-Shirts", color: "White", image: "images/t-shirts/cross-graphic-tee.jpg" },
