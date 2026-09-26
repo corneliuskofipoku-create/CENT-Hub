@@ -19,7 +19,13 @@ const products = [
 ];
 
 const categories = ["Caps & Hats", "Shoes", "T-Shirts", "Hoodies", "Accessories"];
-
+const featuredNames = [
+  "Cross Detail Cap",
+  "Retro Runner Sneakers",
+  "Graphic Street Tee",
+  "Comic Boom Hoodie",
+  "Gold Chronograph Watch"
+];
 const searchAliases = {
   shoe: "shoes",
   shoes: "shoes",
