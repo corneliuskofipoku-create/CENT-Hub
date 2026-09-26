@@ -147,3 +147,36 @@
     color: #666;
   }
 }
+@media (max-width: 600px) {
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #eee;
+  }
+
+  .header .logo {
+    font-weight: 900;
+    letter-spacing: 1px;
+  }
+
+  .header nav {
+    order: 3;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+  }
+
+  .header nav a {
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .header-whatsapp {
+    width: auto;
+    margin-left: auto;
+    padding: 10px 14px;
+    border-radius: 999px;
+  }
+}
