@@ -10,7 +10,7 @@ const products = [
   { name: "Red Edge Sneakers", category: "Shoes", color: "White / Red", price: 480, image: "images/shoes/red-edge-sneakers.jpg" },
   { name: "Urban Motion Sneakers", category: "Shoes", color: "Black / White / Green", price: 500, image: "images/shoes/urban-motion-sneakers.jpg" },
   { name: "Minimal Smile Tee", category: "T-Shirts", color: "White", price: 180, image: "images/t-shirts/minimal-smile-tee.jpg" },
-  { name: "Graphic Street Tee", category: "T-Shirts", color: "Black", image: "images/t-shirts/graphic-street-tee.jpg" },
+  { name: "Graphic Street Tee", category: "T-Shirts", color: "Black", price: 200, image: "images/t-shirts/graphic-street-tee.jpg" },
   { name: "Cross Graphic Tee", category: "T-Shirts", color: "White", image: "images/t-shirts/cross-graphic-tee.jpg" },
   { name: "Comic Boom Hoodie", category: "Hoodies", color: "White / Black / Orange", image: "images/hoodies/comic-boom-hoodie.jpg" },
   { name: "Classic Black Belt", category: "Accessories", color: "Black", image: "images/accessories/classic-black-belt.jpg" },
