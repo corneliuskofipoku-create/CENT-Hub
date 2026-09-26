@@ -5,7 +5,7 @@ const products = [
   { name: "Classic Bulls Cap", category: "Caps & Hats", color: "Black / Red", price: 180, image: "images/caps-hats/classic-bulls-cap.jpg" },
   { name: "Color Stack Cap", category: "Caps & Hats", color: "Blue / Red / Green", price: 170, image: "images/caps-hats/color-stack-cap.jpg" },
   { name: "Essential Trucker Cap", category: "Caps & Hats", color: "Black", price: 160, image: "images/caps-hats/essential-trucker-cap.jpg" },
-  { name: "KING Beanie", category: "Caps & Hats", color: "Black / White / Grey", image: "images/caps-hats/king-beanie.jpg" },
+  { name: "KING Beanie", category: "Caps & Hats", color: "Black / White / Grey", price: 140, image: "images/caps-hats/king-beanie.jpg" },
   { name: "Retro Runner Sneakers", category: "Shoes", color: "White / Black", image: "images/shoes/retro-runner-sneakers.jpg" },
   { name: "Red Edge Sneakers", category: "Shoes", color: "White / Red", image: "images/shoes/red-edge-sneakers.jpg" },
   { name: "Urban Motion Sneakers", category: "Shoes", color: "Black / White / Green", image: "images/shoes/urban-motion-sneakers.jpg" },
