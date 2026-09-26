@@ -14,7 +14,7 @@ const products = [
   { name: "Cross Graphic Tee", category: "T-Shirts", color: "White", price: 200, image: "images/t-shirts/cross-graphic-tee.jpg" },
   { name: "Comic Boom Hoodie", category: "Hoodies", color: "White / Black / Orange", price: 350, image: "images/hoodies/comic-boom-hoodie.jpg" },
   { name: "Classic Black Belt", category: "Accessories", color: "Black", price: 150, image: "images/accessories/classic-black-belt.jpg" },
-  { name: "Flower Link Bracelet", category: "Accessories", color: "Gold / White", image: "images/accessories/flower-link-bracelet.jpg" },
+  { name: "Flower Link Bracelet", category: "Accessories", color: "Gold / White", price: 180, image: "images/accessories/flower-link-bracelet.jpg" },
   { name: "Gold Chronograph Watch", category: "Accessories", color: "Gold / Black", image: "images/accessories/gold-chronograph-watch.jpg" }
 ];
 
