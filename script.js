@@ -11,7 +11,7 @@ const products = [
   { name: "Urban Motion Sneakers", category: "Shoes", color: "Black / White / Green", price: 500, image: "images/shoes/urban-motion-sneakers.jpg" },
   { name: "Minimal Smile Tee", category: "T-Shirts", color: "White", price: 180, image: "images/t-shirts/minimal-smile-tee.jpg" },
   { name: "Graphic Street Tee", category: "T-Shirts", color: "Black", price: 200, image: "images/t-shirts/graphic-street-tee.jpg" },
-  { name: "Cross Graphic Tee", category: "T-Shirts", color: "White", image: "images/t-shirts/cross-graphic-tee.jpg" },
+  { name: "Cross Graphic Tee", category: "T-Shirts", color: "White", price: 200, image: "images/t-shirts/cross-graphic-tee.jpg" },
   { name: "Comic Boom Hoodie", category: "Hoodies", color: "White / Black / Orange", image: "images/hoodies/comic-boom-hoodie.jpg" },
   { name: "Classic Black Belt", category: "Accessories", color: "Black", image: "images/accessories/classic-black-belt.jpg" },
   { name: "Flower Link Bracelet", category: "Accessories", color: "Gold / White", image: "images/accessories/flower-link-bracelet.jpg" },
