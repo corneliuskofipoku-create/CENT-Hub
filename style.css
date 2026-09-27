@@ -443,3 +443,22 @@
   font-weight: 800;
   letter-spacing: 0.5px;
 }
+.featured {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.featured .section-title {
+  margin-bottom: 24px;
+}
+
+.featured .section-title h2 {
+  font-size: 32px;
+  margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+  .featured .section-title h2 {
+    font-size: 26px;
+  }
+}
