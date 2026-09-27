@@ -98,6 +98,17 @@ function renderStore() {
         featuredContainer.appendChild(makeCard(product));
       });
   }
+  const newArrivalsContainer = document.getElementById("newArrivals");
+
+if (newArrivalsContainer) {
+  newArrivalsContainer.innerHTML = "";
+
+  products
+    .filter(product => newArrivalNames.includes(product.name))
+    .forEach(product => {
+      newArrivalsContainer.appendChild(makeCard(product));
+    });
+}
   const container = document.getElementById("productSections");
   let query = document.getElementById("searchInput").value.trim().toLowerCase();
 
