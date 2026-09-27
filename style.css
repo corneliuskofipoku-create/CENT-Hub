@@ -490,3 +490,44 @@
     box-sizing: border-box;
   }
 }
+.new-arrivals {
+  padding: 50px 6%;
+  background: #fff;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.new-arrivals .section-title {
+  margin-bottom: 24px;
+}
+
+.new-arrivals .section-title h2 {
+  font-size: 32px;
+  margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+  .new-arrivals {
+    padding: 35px 12px;
+  }
+
+  .new-arrivals .section-title h2 {
+    font-size: 26px;
+  }
+
+  .new-arrivals .featured-grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 12px;
+    padding-bottom: 10px;
+    scrollbar-width: none;
+  }
+
+  .new-arrivals .featured-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .new-arrivals .product {
+    flex: 0 0 170px;
+  }
+}
