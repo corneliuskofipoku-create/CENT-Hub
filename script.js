@@ -33,7 +33,6 @@ const newArrivalNames = [
   "Minimal Smile Tee",
   "Flower Link Bracelet"
 ];
-];
 const searchAliases = {
   shoe: "shoes",
   shoes: "shoes",
