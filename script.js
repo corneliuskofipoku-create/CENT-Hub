@@ -38,23 +38,35 @@ const searchAliases = {
   shoes: "shoes",
   sneaker: "shoes",
   sneakers: "shoes",
+
   shirt: "t-shirts",
+  shirts: "t-shirts",
   tshirt: "t-shirts",
+  tshirts: "t-shirts",
   "t shirt": "t-shirts",
+  "t shirts": "t-shirts",
   tee: "t-shirts",
+  tees: "t-shirts",
+
   cap: "caps hats",
   caps: "caps hats",
   hat: "caps hats",
   hats: "caps hats",
+  beanie: "caps hats",
+
   hoodie: "hoodies",
   hoodies: "hoodies",
+
   watch: "accessories",
-watches: "accessories",
-accessory: "accessories",
-accessories: "accessories",
-bracelet: "accessories",
-belt: "accessories",
+  watches: "accessories",
+  accessory: "accessories",
+  accessories: "accessories",
+  bracelet: "accessories",
+  bracelets: "accessories",
+  belt: "accessories",
+  belts: "accessories"
 };
+
 let activeCategory = "All";
 
 function chatOnWhatsApp(productName) {
