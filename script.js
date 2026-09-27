@@ -25,6 +25,14 @@ const featuredNames = [
   "Graphic Street Tee",
   "Comic Boom Hoodie",
   "Gold Chronograph Watch"
+
+];
+const newArrivalNames = [
+  "Classic Bulls Cap",
+  "Red Edge Sneakers",
+  "Minimal Smile Tee",
+  "Flower Link Bracelet"
+];
 ];
 const searchAliases = {
   shoe: "shoes",
