@@ -531,3 +531,22 @@
     flex: 0 0 170px;
   }
 }
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .logo img {
+    width: 48px;
+    height: 48px;
+  }
+}
